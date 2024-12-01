@@ -140,12 +140,17 @@ footer .icon{
 
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
+@media (prefers-reduced-motion: reduce) {
     @-webkit-keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
     @keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
+    .icon{
+        animation: icon-animation 1s linear;
+    }
+}
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
 
@@ -262,7 +267,7 @@ img{
         grid-column: 3/4;
         grid-row: 3/5;
     }
-}
+    }
 /* --------------- END MEDIUM SCREEN SIZES --------------- */
 
 
