@@ -77,7 +77,7 @@ table {
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 @media (prefers-color-scheme:dark) {
     body {
-        background-color: #222;
+        background-color: #000;
         color: #fff
     }
 }
@@ -180,7 +180,6 @@ section{
 }
 
 /* ---------- EXTRA SMALL SCREEN STYLES ---------- */
-@media screen (max-width:575px) {
 header, footer{
     background-color: var(--pink);
     color: var(--white);
@@ -196,11 +195,11 @@ img{
     display: inline;
     float: left;
 }
-}
+
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
-    @media screen (min-width:576px) and (max-width:767px) {
+    @media screen (min-width:576px) and (max-width:991px) {
     header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
@@ -234,8 +233,7 @@ img{
 
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
-@media screen (min-width:768px) and (max-width:991px){
-    header, footer{
+    /* header, footer{
         background-color: var(--black);
         color: var(--white);
     }   
@@ -260,16 +258,14 @@ img{
     #seven{
         grid-column: 3/4;
         grid-row: 3/5;
-    }
-}
+    } */
 /* --------------- END MEDIUM SCREEN SIZES --------------- */
 
 
 
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-@media screen (min-width:992px) and (max-width:1199px){
-    header, footer{
+    /* header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
     }
@@ -299,15 +295,14 @@ img{
     }
 
     #seven, #eight{
-        grid-row: 3]/4;
-    } 
-}
+        grid-row: 3/4;
+    } */
 /* --------------- END LARGE SCREEN SIZES --------------- */
+
 
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-
     /* img{
         width: 300px;
         max-width: 300px;
