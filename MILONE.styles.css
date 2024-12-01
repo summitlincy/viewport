@@ -1,7 +1,6 @@
 /* SUMMIT MILONE */
 
 /* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
-*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,6 +22,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -270,7 +270,7 @@ img{
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
     
-    @screen (min-width:992px) and (max-width:1199px){
+    @media (min-width:992px) and (max-width:1199px){
         header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
